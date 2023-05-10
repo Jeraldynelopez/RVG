@@ -1,22 +1,20 @@
 import dash
-from dash import html
+from dash import html, dcc
 import dash_bootstrap_components as dbc
+from dash.dependencies import Input, Output
+import math
+import time
 
 #import fronted
-from fronted.grupo1.titulo1 import titulo1
-from fronted.grupo2.titulo2 import titulo2
-from fronted.grupo3.titulo3 import titulo3
+import fronted
+from fronted.main import layout
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-app.layout = dbc.Container(
-    [
-        dbc.Row(
-            [
-                dbc.Col(titulo1, md=12, style=('background-color':'red')),
-                dbc.Col(titulo2, md=12, style=('background-color':'blue')),
-                dbc.Col(titulo3, md=12, style=('background-color':'gray')),
-            ]
-        )
-    ]
-)
+app.layout = layout
+
+
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
+
