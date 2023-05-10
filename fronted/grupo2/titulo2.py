@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 
 titulo2 = dbc.Container(
     [
-        html.H1('Datos o entradas iniciales'),
+        html.H1('Entradas iniciales'),
         html.Hr(),
         html.Label('Volumen a calcular'),
         dcc.Dropdown(

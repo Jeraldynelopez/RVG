@@ -6,7 +6,6 @@ import math
 import time
 
 #import fronted
-import fronted
 from fronted.main import layout
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])

@@ -12,9 +12,9 @@ layout = dbc.Container(
     [
         dbc.Row(
             [
-                dbc.Col(titulo1, md=12, style={'background-color':'red'}),
+                dbc.Col(titulo1, md=12, style={'background-color':'white'}),
                 dbc.Col(titulo2, md=8, style={'background-color':'blue'}),
-                dbc.Col(titulo3, md=4, style={'background-color':'green'}),
+                dbc.Col(titulo3, md=4, style={'background-color':'gray'}),
 
             ]
         )
